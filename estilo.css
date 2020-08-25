@@ -171,12 +171,12 @@ main .sobre ul li
 {
     transition: 1s;
 }
-.animacao-botao:hover
+/*.animacao-botao:hover
 {
     border: 3px solid purple;
     background-color: black;
     border-radius: 10px;
-}
+}*/
 
 
 /*****Galeria de Logos****/
