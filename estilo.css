@@ -249,7 +249,7 @@ section.gm div.projeto-gm p, section.bg div.projeto-bg p
     font-size: 30px;
     color: white;
     margin-top: 10vh;
-    background-color: purple;
+    background-color: #800080;
     border: 2px solid white;
 }
 
@@ -265,6 +265,7 @@ footer
 {
     padding: 20px;
     text-align: center;
+    color: white;
 }
 footer .dados
 {
