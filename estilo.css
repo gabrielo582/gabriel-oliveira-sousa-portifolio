@@ -22,7 +22,6 @@ html, body
 }
 section
 {
-    min-height: 100vh;
     width: 100%;
     position: relative;
     border-top: 3px solid purple !important;
@@ -147,11 +146,21 @@ main .sobre h2
 }
 main .sobre .service
 {
-    float: left;
-    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+.conteiner-service
+{
+    width: calc(50% - 40px);
+    margin: 20px;
+    padding: 20px;
     background-color: rgb(82, 12, 82);
     border-radius: 10px;
-    padding: 15px;
+}
+main .sobre .service .conteiner-service h3, main .sobre .service .conteiner-service p
+{
+    color: white;
 }
 .animacao-botao
 {
@@ -179,13 +188,13 @@ main section.design .desing-logo
 main section.design .galeria
 { 
     display: flex;
+    flex-flow: row wrap;
     width: 100%;
     padding: 20px;
 }
 main section.design .galeria .box-img
 {
-    width: 47%;
-    margin: 1%;
+    width: calc(100% / 5);
 }
 main section.design .galeria .box-img .img img
 {
@@ -196,39 +205,23 @@ main section.design .galeria .box-img .img img
 /***********TRABALHANDO COM LAYOUT*************/
 /***********TRABALHANDO COM LAYOUT*************/
 /***********GM***********/
-.projeto-gm
+section.project
 {
-    float: left;
-    width: 40%;
+    width: 100%;
     padding-top: 10vh;
-    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
 }
-.img-gm img
-{
-    float: right;
-    width: 55%;
-    padding-top: 10vh;
-}
+.cont {width: 50%; padding: 20px;}
+.img-project {width: 50%;}
+.img-project img {width: 100%;}
 /**********BG*********/
-.projeto-bg
-{
-    float: right;
-    width: 40%;
-    padding-top: 10vh;
-    margin: 20px;
-}
-.img-bg img
-{
-    float: left;
-    width: 49%;
-    padding-top: 10vh;
-}
-/************GM E BG************/
-section.gm div.projeto-gm p, section.bg div.projeto-bg p
+
+section.project div.cont p
 {
     padding-bottom: 10vh;
 }
-.projeto-gm > a, .projeto-bg > a
+section.project .cont > a
 {
     padding: 5px;
     border-radius: 10px;
@@ -238,7 +231,11 @@ section.gm div.projeto-gm p, section.bg div.projeto-bg p
     background-color: #800080;
     border: 2px solid white;
 }
-
+section.two
+{
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+}
 /********MUNDANDO COR DA SECTION COM IFRAME DA LOJA********/
 
 footer
@@ -273,6 +270,14 @@ footer .dados
     main .sobre ul
     {
         grid-template-columns: 1fr;
+    }
+    .conteiner-service
+    {
+        width: 100%;
+        margin: 20px;
+        padding: 20px;
+        background-color: rgb(82, 12, 82);
+        border-radius: 10px;
     }
     /********SECAO DESIGN RESPONSIVA**********/
     main section.design .galeria
