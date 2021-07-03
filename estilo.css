@@ -29,7 +29,7 @@ section
 .overlay
 {
     height: 100vh;
-    background-color: rgba(128, 0, 128, 0.6);
+    /*background-color: rgba(128, 0, 128, 0.6);*/
 }
 h1{font-size: 60px; line-height: 65px;}
 h2{font-size: 50px; line-height: 55px;}
